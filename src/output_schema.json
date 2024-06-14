@@ -8,16 +8,10 @@
         "type": "object",
         "properties": {
           "task_id": {
-            "type": [
-              "string",
-              "integer"
-            ]
+            "type": "integer"
           },
           "node_id": {
-            "type": [
-              "string",
-              "integer"
-            ]
+            "type": "integer"
           },
           "start_time": {
             "type": "integer"
@@ -37,9 +31,19 @@
           "deadline"
         ]
       }
+    },
+    "name": {
+      "type": "string"
+    },
+    "missed_deadlines": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
     }
   },
   "required": [
-    "schedule"
+    "schedule",
+    "name"
   ]
 }

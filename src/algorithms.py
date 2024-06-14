@@ -21,28 +21,28 @@ import networkx as nx
 # just an eample for the structure of the schedule to be returned and to check the frontend and backend connection
 example_schedule = [
     {
-        "task_id": "3",
+        "task_id": 3,
         "node_id": 0,
         "end_time": 20,
         "deadline": 256,
         "start_time": 0,
     },
     {
-        "task_id": "2",
+        "task_id": 2,
         "node_id": 0,
         "end_time": 40,
         "deadline": 300,
         "start_time": 20,
     },
     {
-        "task_id": "1",
+        "task_id": 1,
         "node_id": 0,
         "end_time": 60,
         "deadline": 250,
         "start_time": 40,
     },
     {
-        "task_id": "0",
+        "task_id": 0,
         "node_id": 0,
         "end_time": 80,
         "deadline": 250,

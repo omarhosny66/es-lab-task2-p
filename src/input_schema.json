@@ -11,10 +11,7 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": [
-                  "string",
-                  "integer"
-                ]
+                "type": "integer"
               },
               "wcet": {
                 "type": "integer"
@@ -40,27 +37,15 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": [
-                  "string",
-                  "integer"
-                ]
-              },
-              "sender": {
-                "type": [
-                  "string",
-                  "integer"
-                ]
-              },
-              "receiver": {
-                "type": [
-                  "string",
-                  "integer"
-                ]
-              },
-              "size": {
                 "type": "integer"
               },
-              "timetriggered": {
+              "sender": {
+                "type": "integer"
+              },
+              "receiver": {
+                "type": "integer"
+              },
+              "size": {
                 "type": "integer"
               }
             },
@@ -87,10 +72,7 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": [
-                  "string",
-                  "integer"
-                ]
+                "type": "integer"
               },
               "type": {
                 "type": "string"
@@ -108,10 +90,7 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": [
-                  "string",
-                  "integer"
-                ]
+                "type": "integer"
               },
               "start_node": {
                 "type": [
