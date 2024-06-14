@@ -23,7 +23,7 @@ The implementation of scheduling algorithms requires basic knowledge of concepts
 
 [Graph Theory](https://www.baeldung.com/cs/graph-theory-intro#8-the-weighted-graph) is a branch of mathematics and computer science that studies the properties of graphs. A graph consists of vertices (or nodes) and edges (or arcs) that connect pairs of vertices. In short, a graph is defined as $G = (V, E)$, where $V$ is a set of nodes (also called vertices) and $E$ is a set of edges (also called links).
 
-![alt text](./images/graph_theory.PNG)
+![alt text](./images/graphs-set.webp)
 #### Components of a Graph
 
 **Vertices** are the fundamental units of graphs and can represent entities such as cities, people, or points in space. The **degree of a vertex** in an undirected graph is the number of edges connected to it. In directed graphs, this is split into the indegree (number of edges directed into the vertex) and outdegree (number of edges directed out of the vertex). Another important component of a graph is the **edge**. Edges connect pairs of vertices and can represent relationships like roads between cities, friendships between people, etc. There are different types of graphs, which we will look into in the next section.

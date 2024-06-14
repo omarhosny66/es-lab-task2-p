@@ -29,37 +29,37 @@ We will use the following JSON model describing the application and platform mod
   "application": {
     "tasks": [
       {
-        "id": "1",
+        "id": 1,
         "wcet": 1,
         "mcet": 1,
         "deadline": 2
       },
       {
-        "id": "2",
+        "id": 2,
         "wcet": 1,
         "mcet": 1,
         "deadline": 5
       },
       {
-        "id": "3",
+        "id": 3,
         "wcet": 1,
         "mcet": 1,
         "deadline": 4
       },
       {
-        "id": "4",
+        "id": 4,
         "wcet": 1,
         "mcet": 1,
         "deadline": 3
       },
       {
-        "id": "5",
+        "id": 5,
         "wcet": 1,
         "mcet": 1,
         "deadline": 5
       },
       {
-        "id": "6",
+        "id": 6,
         "wcet": 1,
         "mcet": 1,
         "deadline": 6
