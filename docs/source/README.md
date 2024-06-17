@@ -300,6 +300,9 @@ This schema defines the structure for the schedule object produced by the schedu
     - Handles API endpoints and routing.
     - Configures CORS middleware.
 - **algorithms.py**: Contains the implementation of the scheduling algorithms (LDF, EDF, LL).
+- **test/test_scheduling_algorithms.py:** Tests for the scheduling algorithms.
+    - Run tests using `pytest test/test_scheduling_algorithms.py`
+- **test/input_models**: Contains input JSON models for testing the algorithms.
 - **config.json**: Configuration file for backend settings.
 - **requirements.txt**: File listing all the dependencies required for the project.
 

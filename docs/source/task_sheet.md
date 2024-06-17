@@ -126,6 +126,11 @@ In multi-node scheduling, the tasks can be distributed across different compute 
     - Latest Deadline First Multi Node.
     - Earliest Deadline First Multi Node.
 
+- Test your implementation using the provided test cases. The test cases are designed to evaluate the correctness of your scheduling algorithms. Ensure that your implementation passes all the test cases. Run the tests using the following command from the root of project directory:
+  ``` BASH
+    pytest
+  ```
+
 - For this lab, you can ignore the link delay and bandwidth fields in the platform model. You can assume that the communication between the nodes is instantaneous. There is no bandwidth constraint, and all nodes are connected to a single router. However, as a bonus, you are encouraged to consider the link delays and communication paths as defined in the platform model.
 
 
