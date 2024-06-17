@@ -1,0 +1,178 @@
+{
+    "application": {
+	"tasks": [
+	    {
+		"id": 0,
+		"wcet": 20,
+		"mcet": 10,
+		"deadline": 250
+	    },
+	    {
+		"id": 1,
+		"wcet": 20,
+		"mcet": 10,
+		"deadline": 250
+	    },
+	    {
+		"id": 2,
+		"wcet": 20,
+		"mcet": 10,
+		"deadline": 300
+		
+	    },
+	    {
+		"id": 3,
+		"wcet": 20,
+		"mcet": 10,
+		"deadline": 256
+	
+	    }
+	],
+	"messages": [
+	    {
+		"id": 0,
+		"sender": 1,
+		"receiver": 0,
+		"size": 40
+	    },
+	    {
+		"id": 1,
+		"sender": 2,
+		"receiver": 1,
+		"size": 40
+	    },
+	    {
+		"id": 2,
+		"sender": 3,
+		"receiver": 1,
+		"size": 40
+	    }
+	]
+    },
+    "platform": {
+	"nodes": [
+	    {
+		"id": 0,
+		"type": "router"
+	    },
+	    {
+		"id": 1,
+		"type": "compute"
+	    },
+	    {
+		"id": 2,
+		"type": "compute"
+	    },
+	    {
+		"id": 3,
+		"type": "compute"
+	    },
+	    {
+		"id": 4,
+		"type": "compute"
+	    },
+	    {
+		"id": 5,
+		"type": "compute"
+	    },
+	    {
+		"id": 6,
+		"type": "compute"
+	    },
+	    {
+		"id": 7,
+		"type": "router"
+	    },
+	    {
+		"id": 8,
+		"type": "router"
+	    },
+	    {
+		"id": 9,
+		"type": "router"
+	    }
+	],
+	"links": [
+	    {
+	    "id":0,
+		"start_node": 0,
+		"end_node": 7,
+		"link_delay": 4,
+		"bandwidth":200,
+		"type": "ethernet"
+	    },
+	    {
+			"id":1,
+		"start_node": 1,
+		"end_node": 7,
+		"link_delay": 2,
+		"bandwidth":200,
+		"type": "ethernet"
+	    },
+	    {
+			"id":2,
+		"start_node": 7,
+		"end_node": 8,
+		"link_delay": 8,
+		"bandwidth":200,
+		"type": "ethernet"
+	    },
+	    {
+			"id":3,
+		"start_node": 2,
+		"end_node": 8,
+		"link_delay": 3,
+		"bandwidth":200,
+		"type": "ethernet"
+	    },
+	    {
+			"id":4,
+		"start_node": 3,
+		"end_node": 8,
+		"link_delay": 5,
+		"bandwidth":200,
+		"type": "ethernet"
+	    },
+	    {
+			"id":5,
+		"start_node": 4,
+		"end_node": 8,
+		"link_delay": 7,
+		"bandwidth":200,
+		"type": "wired"
+	    },
+	    {
+			"id":6,
+		"start_node": 8,
+		"end_node": 9,
+		"link_delay": 6,
+		"bandwidth":200,
+		"type": "wired"
+	    },
+	    {
+			"id":7,
+		"start_node": 7,
+		"end_node": 9,
+		"link_delay": 1,
+		"bandwidth":200,
+		"type": "ethernet"
+	    },
+	    {
+			"id":8,
+		"start_node": 5,
+		"end_node": 9,
+		"link_delay": 4,
+		"bandwidth":200,
+		"type": "ethernet"
+	    },
+	    {
+			"id":9,
+		"start_node": 6,
+		"end_node": 9,
+		"link_delay": 2,
+		"bandwidth":200,
+		"type": "ethernet"
+	    }
+	]
+    }
+}

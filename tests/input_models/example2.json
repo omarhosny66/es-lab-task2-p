@@ -1,0 +1,326 @@
+{
+  "application": {
+    "tasks": [
+      {
+        "id": 0,
+        "wcet": 3,
+        "mcet": 2,
+        "deadline": 823
+      },
+      {
+        "id": 1,
+        "wcet": 3,
+        "mcet": 2,
+        "deadline": 584
+      },
+      {
+        "id": 2,
+        "wcet": 1,
+        "mcet": 1,
+        "deadline": 213
+      },
+      {
+        "id": 3,
+        "wcet": 5,
+        "mcet": 2,
+        "deadline": 852
+      },
+      {
+        "id": 4,
+        "wcet": 3,
+        "mcet": 1,
+        "deadline": 892
+      },
+      {
+        "id": 5,
+        "wcet": 5,
+        "mcet": 2,
+        "deadline": 288
+      },
+      {
+        "id": 6,
+        "wcet": 2,
+        "mcet": 2,
+        "deadline": 889
+      },
+      {
+        "id": 7,
+        "wcet": 4,
+        "mcet": 3,
+        "deadline": 665
+      },
+      {
+        "id": 8,
+        "wcet": 2,
+        "mcet": 2,
+        "deadline": 306
+      },
+      {
+        "id": 9,
+        "wcet": 2,
+        "mcet": 2,
+        "deadline": 46
+      }
+    ],
+    "messages": [
+      {
+        "id": 1,
+        "sender": 0,
+        "receiver": 1,
+        "size": 3
+      },
+      {
+        "id": 1,
+        "sender": 1,
+        "receiver": 2,
+        "size": 47
+      },
+      {
+        "id": 4,
+        "sender": 1,
+        "receiver": 5,
+        "size": 12
+      },
+      {
+        "id": 1,
+        "sender": 3,
+        "receiver": 4,
+        "size": 17
+      },
+      {
+        "id": 4,
+        "sender": 3,
+        "receiver": 7,
+        "size": 14
+      },
+      {
+        "id": 2,
+        "sender": 4,
+        "receiver": 6,
+        "size": 1
+      },
+      {
+        "id": 2,
+        "sender": 6,
+        "receiver": 8,
+        "size": 30
+      },
+      {
+        "id": 1,
+        "sender": 8,
+        "receiver": 9,
+        "size": 21
+      }
+    ]
+  },
+  "platform": {
+    "nodes": [
+      {
+        "id": 0,
+        "type": "compute"
+      },
+      {
+        "id": 1,
+        "type": "compute"
+      },
+      {
+        "id": 2,
+        "type": "compute"
+      },
+      {
+        "id": 3,
+        "type": "compute"
+      },
+      {
+        "id": 4,
+        "type": "compute"
+      },
+      {
+        "id": 5,
+        "type": "compute"
+      },
+      {
+        "id": 6,
+        "type": "compute"
+      },
+      {
+        "id": 7,
+        "type": "compute"
+      },
+      {
+        "id": 8,
+        "type": "compute"
+      },
+      {
+        "id": 9,
+        "type": "compute"
+      },
+      {
+        "id": 10,
+        "type": "router"
+      },
+      {
+        "id": 11,
+        "type": "router"
+      },
+      {
+        "id": 12,
+        "type": "router"
+      },
+      {
+        "id": 13,
+        "type": "sensor"
+      },
+      {
+        "id": 14,
+        "type": "sensor"
+      },
+      {
+        "id": 15,
+        "type": "actuator"
+      },
+      {
+        "id": 16,
+        "type": "actuator"
+      }
+    ],
+    "links": [
+      {
+        "id": 0,
+        "start_node": 0,
+        "end_node": 10,
+        "link_delay": 4,
+        "bandwidth": 88,
+        "type": "ethernet"
+      },
+      {
+        "id": 1,
+        "start_node": 1,
+        "end_node": 11,
+        "link_delay": 1,
+        "bandwidth": 83,
+        "type": "ethernet"
+      },
+      {
+        "id": 2,
+        "start_node": 2,
+        "end_node": 11,
+        "link_delay": 4,
+        "bandwidth": 69,
+        "type": "ethernet"
+      },
+      {
+        "id": 3,
+        "start_node": 3,
+        "end_node": 10,
+        "link_delay": 4,
+        "bandwidth": 62,
+        "type": "ethernet"
+      },
+      {
+        "id": 4,
+        "start_node": 4,
+        "end_node": 10,
+        "link_delay": 2,
+        "bandwidth": 15,
+        "type": "ethernet"
+      },
+      {
+        "id": 5,
+        "start_node": 5,
+        "end_node": 11,
+        "link_delay": 4,
+        "bandwidth": 45,
+        "type": "ethernet"
+      },
+      {
+        "id": 6,
+        "start_node": 6,
+        "end_node": 10,
+        "link_delay": 2,
+        "bandwidth": 100,
+        "type": "ethernet"
+      },
+      {
+        "id": 7,
+        "start_node": 7,
+        "end_node": 10,
+        "link_delay": 4,
+        "bandwidth": 18,
+        "type": "ethernet"
+      },
+      {
+        "id": 8,
+        "start_node": 8,
+        "end_node": 11,
+        "link_delay": 1,
+        "bandwidth": 5,
+        "type": "ethernet"
+      },
+      {
+        "id": 9,
+        "start_node": 9,
+        "end_node": 10,
+        "link_delay": 1,
+        "bandwidth": 46,
+        "type": "ethernet"
+      },
+      {
+        "id": 10,
+        "start_node": 10,
+        "end_node": 11,
+        "link_delay": 4,
+        "bandwidth": 11,
+        "type": "ethernet"
+      },
+      {
+        "id": 11,
+        "start_node": 11,
+        "end_node": 12,
+        "link_delay": 4,
+        "bandwidth": 92,
+        "type": "ethernet"
+      },
+      {
+        "id": 12,
+        "start_node": 12,
+        "end_node": 10,
+        "link_delay": 3,
+        "bandwidth": 4,
+        "type": "ethernet"
+      },
+      {
+        "id": 13,
+        "start_node": 13,
+        "end_node": 10,
+        "link_delay": 2,
+        "bandwidth": 15,
+        "type": "ethernet"
+      },
+      {
+        "id": 14,
+        "start_node": 14,
+        "end_node": 10,
+        "link_delay": 5,
+        "bandwidth": 29,
+        "type": "ethernet"
+      },
+      {
+        "id": 15,
+        "start_node": 15,
+        "end_node": 11,
+        "link_delay": 3,
+        "bandwidth": 39,
+        "type": "ethernet"
+      },
+      {
+        "id": 16,
+        "start_node": 16,
+        "end_node": 11,
+        "link_delay": 3,
+        "bandwidth": 92,
+        "type": "ethernet"
+      }
+    ]
+  }
+}
