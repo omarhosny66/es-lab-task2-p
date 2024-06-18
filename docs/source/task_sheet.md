@@ -130,6 +130,12 @@ In multi-node scheduling, the tasks can be distributed across different compute 
   ``` BASH
     pytest
   ```
+  To automatically run the tests after each change in algorithm, you can run the following command from the project root directory:
+
+  ``` BASH
+    pip install pytest-watch
+    ptw
+  ```
 
 - For this lab, you can ignore the link delay and bandwidth fields in the platform model. You can assume that the communication between the nodes is instantaneous. There is no bandwidth constraint, and all nodes are connected to a single router. However, as a bonus, you are encouraged to consider the link delays and communication paths as defined in the platform model.
 

@@ -53,6 +53,7 @@ This repository contains the backend server for the Task Scheduling front-end. T
 - [Python 3](https://www.python.org/about/gettingstarted/)
 - [FastAPI](https://fastapi.tiangolo.com/learn/)
 - [NetworkX](https://networkx.org/documentation/stable/tutorial.html)
+- [Pytest](https://docs.pytest.org/en/8.2.x/getting-started.html)
 - [Uvicorn](https://www.uvicorn.org/)
 
 ## Features
@@ -302,6 +303,12 @@ This schema defines the structure for the schedule object produced by the schedu
 - **algorithms.py**: Contains the implementation of the scheduling algorithms (LDF, EDF, LL).
 - **test/test_scheduling_algorithms.py:** Tests for the scheduling algorithms.
     - Run tests using `pytest test/test_scheduling_algorithms.py`
+    - To automatically run the tests after each save, you can run the following command from the project root directory:
+
+    ``` BASH
+      pip install pytest-watch
+      ptw
+    ```
 - **test/input_models**: Contains input JSON models for testing the algorithms.
 - **config.json**: Configuration file for backend settings.
 - **requirements.txt**: File listing all the dependencies required for the project.
