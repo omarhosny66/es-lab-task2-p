@@ -26,113 +26,112 @@ We will use the following JSON model describing the application and platform mod
 
 ```json
 {
-  "application": {
-    "tasks": [
-      {
-        "id": 1,
-        "wcet": 1,
-        "mcet": 1,
-        "deadline": 2
-      },
-      {
-        "id": 2,
-        "wcet": 1,
-        "mcet": 1,
-        "deadline": 5
-      },
-      {
-        "id": 3,
-        "wcet": 1,
-        "mcet": 1,
-        "deadline": 4
-      },
-      {
-        "id": 4,
-        "wcet": 1,
-        "mcet": 1,
-        "deadline": 3
-      },
-      {
-        "id": 5,
-        "wcet": 1,
-        "mcet": 1,
-        "deadline": 5
-      },
-      {
-        "id": 6,
-        "wcet": 1,
-        "mcet": 1,
-        "deadline": 6
-      }
-    ],
-    "messages": [
-      {
-        "id": 1,
-        "sender": 1,
-        "receiver": 2,
-        "size": 2,
-      },
-      {
-        "id": 2,
-        "sender": 1,
-        "receiver": 3,
-        "size": 2,
-      },
-      {
-        "id": 3,
-        "sender": 2,
-        "receiver": 4,
-        "size": 2,
-      },
-      {
-        "id": 4,
-        "sender": 3,
-        "receiver": 6,
-        "size": 2,
-      },
-      {
-        "id": 5,
-        "sender": 2,
-        "receiver": 5,
-        "size": 2,
-          }
-    ]
-  },
-  "platform": {
-    "nodes": [
-      {
-        "id": 1,
-        "type": "compute"
-      },
-      {
-        "id": 2,
-        "type": "compute"
-      },
-      {
-        "id": 3,
-        "type": "router"
-      }
-    ],
+    "application": {
+      "tasks": [
+        {
+            "id": 1,
+            "wcet": 1,
+            "mcet": 1,
+            "deadline": 2
+        },
+        {
+            "id": 2,
+            "wcet": 1,
+            "mcet": 1,
+            "deadline": 5
+        },
+        {
+            "id": 3,
+            "wcet": 1,
+            "mcet": 1,
+            "deadline": 4
+        },
+        {
+            "id": 4,
+            "wcet": 1,
+            "mcet": 1,
+            "deadline": 3
+        },
+        {
+            "id": 5,
+            "wcet": 1,
+            "mcet": 1,
+            "deadline": 5
+        },
+        {
+            "id": 6,
+            "wcet": 1,
+            "mcet": 1,
+            "deadline": 6
         }
+        ],
+        "messages": [
+        {
+            "id": 1,
+            "sender": 1,
+            "receiver": 2,
+            "size": 2
+        },
+        {
+            "id": 2,
+            "sender": 1,
+            "receiver": 3,
+            "size": 2
+        },
+        {
+            "id": 3,
+            "sender": 2,
+            "receiver": 4,
+            "size": 2
+        },
+        {
+            "id": 4,
+            "sender": 3,
+            "receiver": 6,
+            "size": 2
+        },
+        {
+            "id": 5,
+            "sender": 2,
+            "receiver": 5,
+            "size": 2
+        }
+      ]
+    },
+    "platform": {
+        "nodes": [
+        {
+            "id": 1,
+            "type": "compute"
+        },
+        {
+            "id": 2,
+            "type": "compute"
+        },
+        {
+            "id": 3,
+            "type": "router"
+        }
+      ]
+    },
     "links": [
-	    {
-      "id": 1,  
-		  "start_node": 1,
-		  "end_node": 3,
-      "link_delay": 2,
-      "bandwidth": 100,
-      "type": "ethernet"
-	    },
-      {
-      "id": 2,  
-      "start_node": 2,
-      "end_node": 3,
-      "link_delay": 2,
-      "bandwidth": 100,
-      "type": "ethernet"
-      }
+        {
+            "id": 1,  
+            "start_node": 1,
+            "end_node": 3,
+            "link_delay": 2,
+            "bandwidth": 100,
+            "type": "ethernet"
+        },
+        {
+            "id": 2,  
+            "start_node": 2,
+            "end_node": 3,
+            "link_delay": 2,
+            "bandwidth": 100,
+            "type": "ethernet"
+        }
     ]
-  }
 }
 ```
 ### Example Scheduling Algorithms Output
