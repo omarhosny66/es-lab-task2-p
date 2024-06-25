@@ -7,7 +7,7 @@ import sys
 script_dir = os.path.dirname(__file__)
 input_models_dir = os.path.join(script_dir, "input_models")
 sys.path.append(os.path.abspath(os.path.join(script_dir, "..", "src")))
-from algorithms import edf_multinode, ll_multinode, ldf_multinode
+from algorithms import ldf_single_node, edf_single_node, edf_multinode, ll_multinode, ldf_multinode, ldf_single_node
 
 
 # Utility function to load models and run scheduling algorithm
@@ -19,9 +19,15 @@ def load_and_schedule(filename):
     application_model = model_data["application"]
     platform_model = model_data["platform"]
     results = []
-    for algo in [edf_multinode, ll_multinode, ldf_multinode]:
+   
+    for algo in [ldf_single_node, edf_single_node]:
+        result = algo(application_model)
+        results.append((result, application_model))
+    
+    for algo in [edf_multinode, ldf_multinode, ll_multinode]:
         result = algo(application_model, platform_model)
         results.append((result, application_model))
+ 
     return results
 
 
@@ -36,7 +42,7 @@ def test_task_duration(filename):
             wcet = next(
                 (t["wcet"] for t in app_model["tasks"] if t["id"] == task_id), None
             )
-            assert end_time == start_time + wcet, "Incorrect task duration calculation"
+            assert end_time == start_time + wcet, f'Incorrect task duration calculation in {result["name"]}'
 
 
 @pytest.mark.parametrize("filename", os.listdir(input_models_dir))
@@ -49,7 +55,7 @@ def test_task_deadline(filename):
             deadline = next(
                 (t["deadline"] for t in app_model["tasks"] if t["id"] == task_id), None
             )
-            assert end_time <= deadline, "Task exceeds deadline"
+            assert end_time <= deadline, f'Task exceeds deadline in {result["name"]}'
 
 
 @pytest.mark.parametrize("filename", os.listdir(input_models_dir))
@@ -71,4 +77,4 @@ def test_task_dependencies(filename):
             ]
             assert start_time >= max(
                 predecessors_end_times, default=0
-            ), "Task starts before predecessor ends"
+            ), f'Task starts before predecessor ends in {result["name"]}'
